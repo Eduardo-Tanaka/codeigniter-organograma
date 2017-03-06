@@ -1,12 +1,24 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<script type="text/javascript" src="<?=base_url('includes/js/jquery-1.12.3.min.js')?>"></script>
-	<script type="text/javascript" src="<?=base_url('includes/js/bootstrap.min.js')?>"></script>
 	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/css/bootstrap.min.css')?>" />
 	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/css/font-awesome.min.css')?>" />
+	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/alertifyjs/css/alertify.min.css')?>" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/css/estilo.css')?>" />
+
+	<script src="<?=base_url('vendor/components/jquery/jquery.min.js')?>"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="<?=base_url('includes/js/jquery.easing.min.js')?>"></script>
+	<script type="text/javascript" src="<?=base_url('includes/js/bootstrap.min.js')?>"></script>
+	<script src="<?=base_url('includes/js/jquery.mask.min.js')?>"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script> 
+	<script src="<?=base_url('includes/alertifyjs/alertify.min.js')?>"></script>
+	<script src="<?=base_url('includes/js/tag-it.js')?>"></script>
+	
 	<title><?=$title?></title>
 </head>
 <body>
@@ -26,14 +38,9 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="<?=base_url('pessoa/cadastro')?>">Cadastro</a></li>
         <li><a href="<?=base_url('pessoa/lista')?>">Lista</a></li>
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Entrar</a></li>
-        <li><a href="#">Registrar</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
