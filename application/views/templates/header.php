@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/css/estilo.css')?>" />
 
-	<script src="<?=base_url('vendor/components/jquery/jquery.min.js')?>"></script>
+	<script src="<?=base_url('includes/js/jquery-1.12.3.min.js')?>"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="<?=base_url('includes/js/jquery.easing.min.js')?>"></script>
 	<script type="text/javascript" src="<?=base_url('includes/js/bootstrap.min.js')?>"></script>
