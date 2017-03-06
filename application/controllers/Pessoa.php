@@ -49,11 +49,29 @@ class Pessoa extends CI_Controller {
 			$pessoa = array (
 			 	'id_pessoa' => $this->input->post('id'),
             	'nm_pessoa' => $this->input->post('nome'),
-            	'dt_nascimento' => $this->input->post('data') 
+				'nr_cpf' => preg_replace("/[^0-9]/", "", $this->input->post('cpf')),
+				'ds_email' => $this->input->post('email'),
+            	'dt_nascimento' => date("Y-m-d", strtotime(str_replace('/', '-', $this->input->post('data')))),
+				
+				'nr_cep' => preg_replace("/[^0-9]/", "", $this->input->post('cep')),
+				'ds_logradouro' => $this->input->post('logradouro'),
+				'ds_complemento' => $this->input->post('complemento'),
+				'nr_logradouro' => $this->input->post('numero'),
+				'ds_bairro' => $this->input->post('bairro'),
+				'ds_cidade' => $this->input->post('cidade'),
+				'ds_estado' => $this->input->post('estado'),
+				'ds_habilidades' => $this->input->post('habilidades'),
+				'ds_departamento' => $this->input->post('departamento')
 			);	
 			$data['msg'] = $this->Pessoa_model->edit($pessoa);
 		} 
 		$data['pessoa'] = $this->Pessoa_model->getById($id);
+		while(strlen($data['pessoa']['nr_cpf']) < 11) {
+			$data['pessoa']['nr_cpf'] = '0' . $data['pessoa']['nr_cpf']; 
+		}
+		while(strlen($data['pessoa']['nr_cep']) < 8) {
+			$data['pessoa']['nr_cep'] = '0' . $data['pessoa']['nr_cep']; 
+		}
 		$data['title'] = "Edição de Pessoa"; // can be change according to views
         $this->load->template('pessoa/editar', $data); // this will load the view file
 	}
