@@ -11,9 +11,6 @@ class Pessoa extends CI_Controller {
 		if($_POST){
 			$this->load->model('Pessoa_model');
 			$data['msg'] = $this->Pessoa_model->insert();
-			// store data to flashdata
-			$this->session->set_flashdata('msg', $data['msg']['mensagem']);
-			redirect('pessoa/lista');
 		}
 		$data['title'] = "Cadastro de Pessoa"; // can be change according to views
         $this->load->template('pessoa/cadastro', $data); // this will load the view file
@@ -33,6 +30,7 @@ class Pessoa extends CI_Controller {
        			<td>' . $row->nm_pessoa . '</td>
        			<td>' . $row->nr_cpf . '</td>
        			<td>' . date('d/m/Y', strtotime($row->dt_nascimento)) . '</td>
+				<td class="cpf">' . $row->ds_departamento . '</td>
        			<td><a class="btn btn-success" href="' . base_url('/pessoa/editar/' . $row->id_pessoa) . '">Editar <i class="fa fa-pencil" aria-hidden="true"></i></a></td>
        			<td><a class="btn btn-danger" href="' . base_url('/pessoa/deletar/' . $row->id_pessoa) . '">Deletar <i class="fa fa-trash" aria-hidden="true"></i></a></td>
        		</tr>';

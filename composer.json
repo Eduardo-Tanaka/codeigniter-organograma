@@ -12,8 +12,7 @@
 	},
 	"require": {
 		"php": ">=5.2.4",
-		 "ext-mysql": "*",
-		 "components/jquery": "1.12.*",
+		 "ext-mysql": "*"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"

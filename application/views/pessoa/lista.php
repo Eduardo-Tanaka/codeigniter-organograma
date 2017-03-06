@@ -13,8 +13,9 @@
 		<thead>
 			<tr>
 				<th>Nome</th>
-				<th>Autor</th>
-				<th>Data</th>
+				<th>CPF</th>
+				<th>Data Nascimento</th>
+				<th>Departamento</th>
 				<th colspan="2">Ação</th>
 			</tr>
 		</thead>
@@ -22,5 +23,4 @@
 			<?= $pessoas ?>
 		</tbody>
 	</table>
-
 </div>

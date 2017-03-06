@@ -1,4 +1,5 @@
 <div class="container">	
+	<h1 class="lead text-center">Cadastro de Pessoa</h1>
 	<!-- multistep form -->
 	<form id="msform" method="post" action="">
 		<!-- progressbar -->
@@ -116,9 +117,9 @@
 			<label for="departamento" class='pull-left'>Departamento</label>
 			<select id="departamento" name="departamento" class="form-control">
 				<option value="1">Depto 1</option>
-				<option value="1">Depto 2</option>
-				<option value="1">Depto 3</option>
-				<option value="1">Depto 4</option>
+				<option value="2">Depto 2</option>
+				<option value="3">Depto 3</option>
+				<option value="4">Depto 4</option>
 			</select>
 			
 			<input type="submit" name="submit" class="submit action-button pull-right" value="Salvar" />

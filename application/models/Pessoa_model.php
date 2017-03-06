@@ -107,6 +107,7 @@
 		}
 
 		public function listAll() {
+			$this->db->order_by("ds_departamento", "asc");
 			$query = $this->db->get('TB_PESSOA');
 	        return $query->result();
 		}
