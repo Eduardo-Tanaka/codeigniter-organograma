@@ -178,7 +178,7 @@
 					//console.log(event.target.id);
 					if (event.target.id == 'sort1') {
 						$.ajax({
-							url: '../codeigniter-organograma/Pessoa/editarOrganograma',
+							url: '../Pessoa/editarOrganograma',
 							type: 'POST',
 							data: { 'id': ui.item[0].id, 'depto': '1' },
 							success: function (data) {
@@ -192,7 +192,7 @@
 					}
 					else if (event.target.id == 'sort2') {
 						$.ajax({
-							url: '../codeigniter-organograma/Pessoa/editarOrganograma',
+							url: '../Pessoa/editarOrganograma',
 							type: 'POST',
 							data: { 'id': ui.item[0].id, 'depto': '2' },
 							success: function (data) {
@@ -206,7 +206,7 @@
 					}
 					else if (event.target.id == 'sort3') {
 						$.ajax({
-							url: '../codeigniter-organograma/Pessoa/editarOrganograma',
+							url: '../Pessoa/editarOrganograma',
 							type: 'POST',
 							data: { 'id': ui.item[0].id, 'depto': '3' },
 							success: function (data) {
@@ -220,7 +220,7 @@
 					}
 					else if (event.target.id == 'sort4') {
 						$.ajax({
-							url: '../codeigniter-organograma/Pessoa/editarOrganograma',
+							url: '../Pessoa/editarOrganograma',
 							type: 'POST',
 							data: { 'id': ui.item[0].id, 'depto': '4' },
 							success: function (data) {
