@@ -16,7 +16,7 @@ class Organograma extends CI_Controller {
 		{
 			if($row->ds_departamento == 1) {
 				$tabela1 .= 
-				'<li>
+				'<li id="' . $row->id_pessoa . '">
 					<div class="node bottom-level">
 						<div class="title">
 							' . $row->nm_pessoa . '
@@ -33,7 +33,7 @@ class Organograma extends CI_Controller {
 				</li>';
 			} else if($row->ds_departamento == 2) {
 				$tabela2 .= 
-				'<li>
+				'<li id="' . $row->id_pessoa . '">
 					<div class="node bottom-level">
 						<div class="title">
 							' . $row->nm_pessoa . '
@@ -50,7 +50,7 @@ class Organograma extends CI_Controller {
 				</li>';
 			} else if($row->ds_departamento == 3) {
 				$tabela3 .= 
-				'<li>
+				'<li id="' . $row->id_pessoa . '">
 					<div class="node bottom-level">
 						<div class="title">
 							' . $row->nm_pessoa . '
@@ -67,7 +67,7 @@ class Organograma extends CI_Controller {
 				</li>';
 			} else if($row->ds_departamento == 4) {
 				$tabela4 .= 
-				'<li>
+				'<li id="' . $row->id_pessoa . '">
 					<div class="node bottom-level">
 						<div class="title">
 							' . $row->nm_pessoa . '

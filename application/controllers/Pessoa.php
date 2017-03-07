@@ -76,6 +76,12 @@ class Pessoa extends CI_Controller {
         $this->load->template('pessoa/editar', $data); // this will load the view file
 	}
 	
+	public function editarOrganograma()
+	{
+		$this->load->model('Pessoa_model');
+		$this->Pessoa_model->editOrganograma($_POST['id'], $_POST['depto']);
+	}
+	
 	public function deletar($id)
 	{
 		$this->load->library('session');

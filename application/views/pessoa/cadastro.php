@@ -139,7 +139,7 @@ $(document).ready(function(){
 	$("#habilidades").tagit({
 		autocomplete: {delay: 0, minLength: 1},
 		showAutocompleteOnFocus: true,
-		availableTags: ["c++", "java", "php", "javascript", "ruby", "python", "c"],
+		availableTags: ["c++", "java", "php", "javascript", "ruby", "python", "c", "ajax", "sqlserver", "c#", "ruby", "android", "jquery", "oracle", "postgre"],
 		placeholderText: "Habilidades"
 	});
 		

@@ -116,6 +116,12 @@
 			$query = $this->db->where('id_pessoa', $id)->get('TB_PESSOA');
 	        return $query->result_array()[0];
 		}
+		
+		public function editOrganograma($id, $depto){
+			$this->db->set('ds_departamento', $depto);
+			$this->db->where('id_pessoa', $id);
+			$this->db->update('TB_PESSOA'); 
+		}
 
 		public function edit($pessoa) {
 			// carrega a biblioteca de validação do code igniter
