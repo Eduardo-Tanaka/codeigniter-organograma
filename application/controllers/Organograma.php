@@ -24,11 +24,6 @@ class Organograma extends CI_Controller {
 						<div class="content">
 							' . $row->ds_habilidades . '
 						</div>
-						<i class="edge verticalEdge bottomEdge fa"></i>
-						<i class="fa fa-info-circle second-menu-icon"></i>
-						<div class="second-menu">
-							<img class="avatar" src="img/module_table_bottom.png"></img>
-						</div>
 					</div>
 				</li>';
 			} else if($row->ds_departamento == 2) {
@@ -40,11 +35,6 @@ class Organograma extends CI_Controller {
 						</div>
 						<div class="content">
 							' . $row->ds_habilidades . '
-						</div>
-						<i class="edge verticalEdge bottomEdge fa"></i>
-						<i class="fa fa-info-circle second-menu-icon"></i>
-						<div class="second-menu">
-							<img class="avatar" src="img/module_table_bottom.png"></img>
 						</div>
 					</div>
 				</li>';
@@ -58,11 +48,6 @@ class Organograma extends CI_Controller {
 						<div class="content">
 							' . $row->ds_habilidades . '
 						</div>
-						<i class="edge verticalEdge bottomEdge fa"></i>
-						<i class="fa fa-info-circle second-menu-icon"></i>
-						<div class="second-menu">
-							<img class="avatar" src="img/module_table_bottom.png"></img>
-						</div>
 					</div>
 				</li>';
 			} else if($row->ds_departamento == 4) {
@@ -74,11 +59,6 @@ class Organograma extends CI_Controller {
 						</div>
 						<div class="content">
 							' . $row->ds_habilidades . '
-						</div>
-						<i class="edge verticalEdge bottomEdge fa"></i>
-						<i class="fa fa-info-circle second-menu-icon"></i>
-						<div class="second-menu">
-							<img class="avatar" src="img/module_table_bottom.png"></img>
 						</div>
 					</div>
 				</li>';

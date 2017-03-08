@@ -7,21 +7,21 @@
 	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/css/bootstrap.min.css')?>" />
 	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/css/font-awesome.min.css')?>" />
 	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/alertifyjs/css/alertify.min.css')?>" />
-	<link type="text/css" rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/jquery-ui-1.12.1/jquery-ui.min.css')?>" />
 	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/css/estilo.css')?>" />
 	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/css/jquery.orgchart.css')?>" />
 	<link type="text/css" rel="stylesheet" href="<?=base_url('includes/toastr-master/toastr-master/build/toastr.min.css')?>" />
 	
 
-	<script src="<?=base_url('includes/js/jquery-1.12.3.min.js')?>"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="<?=base_url('includes/js/jquery.easing.min.js')?>"></script>
+	<script type="text/javascript" src="<?=base_url('includes/js/jquery-1.12.3.min.js')?>"></script>
+	<script type="text/javascript" src="<?=base_url('includes/jquery-ui-1.12.1/jquery-ui.min.js')?>"></script>
+	<script type="text/javascript" src="<?=base_url('includes/js/jquery.easing.min.js')?>"></script>
 	<script type="text/javascript" src="<?=base_url('includes/js/bootstrap.min.js')?>"></script>
-	<script src="<?=base_url('includes/js/jquery.mask.min.js')?>"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script> 
-	<script src="<?=base_url('includes/alertifyjs/alertify.min.js')?>"></script>
-	<script src="<?=base_url('includes/js/tag-it.js')?>"></script>
-	<script src="<?=base_url('includes/toastr-master/toastr-master/build/toastr.min.js')?>"></script>
+	<script type="text/javascript" src="<?=base_url('includes/js/jquery.mask.min.js')?>"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script> 
+	<script type="text/javascript" src="<?=base_url('includes/alertifyjs/alertify.min.js')?>"></script>
+	<script type="text/javascript" src="<?=base_url('includes/js/tag-it.js')?>"></script>
+	<script type="text/javascript" src="<?=base_url('includes/toastr-master/toastr-master/build/toastr.min.js')?>"></script>
 	
 	<title><?=$title?></title>
 </head>
